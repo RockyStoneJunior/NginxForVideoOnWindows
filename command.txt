@@ -1,3 +1,19 @@
 ffmpeg -re -i C:\Users\Administrator\Desktop\snooker.mp4 -vcodec libx264 -c:a aac -f flv rtmp://localhost:1935/livee/room
 
 rtmp://localhost:1935/livee/room
+
+
+linux install nginx rtmp : https://www.cnblogs.com/yanjieli/archive/2019/03/28/10615638.html
+
+
+for Ubuntu
+查看zlib是否安装：
+
+dpkg -l | grep zlib
+
+解决依赖包openssl安装，命令：sudo apt-get install openssl libssl-dev
+
+解决依赖包pcre安装，命令：sudo apt-get install libpcre3 libpcre3-dev
+
+
+解决依赖包zlib安装，命令：sudo apt-get install zlib1g-dev
